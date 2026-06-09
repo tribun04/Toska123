@@ -28,14 +28,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-[120] transition-all duration-700 
+        className={`fixed top-0 w-full z-[120] transition-all duration-700 h-[110px] 
         ${
           scrolled
             ? "py-4 bg-white/95 backdrop-blur-xl border-b border-stone-200 shadow-sm"
             : "py-8 bg-white"
         }`}
       >
-        <div className="max-w-[1800px] h-10 mx-auto px-6 md:px-12 flex justify-between items-center">
+        <div className="max-w-[1800px] h-[75px] mx-auto px-6 md:px-12 flex justify-between items-center transition-opacity duration-500">
           {/* LOGO */}
           <Link
             to="/"
@@ -123,13 +123,13 @@ const Navbar = () => {
                   }`}
                 style={{ transitionDelay: `${index * 100 + 300}ms` }}
               >
-                <span className="text-[#C9A96E] font-serif text-lg md:text-2xl italic opacity-40 group-hover:opacity-100 transition-opacity">
+                <span className="text-[#bc0108] font-serif text-lg md:text-2xl italic opacity-40 group-hover:opacity-100 transition-opacity">
                   {item.id}
                 </span>
-                <span className="text-4xl md:text-7xl font-serif text-stone-800 group-hover:italic group-hover:text-[#C9A96E] transition-all">
+                <span className="text-4xl md:text-7xl font-serif text-stone-800 group-hover:italic group-hover:text-[#bc0108] transition-all">
                   {item.name}
                 </span>
-                <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-[#C9A96E] opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500" />
+                <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-[#bc0108] opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500" />
               </a>
             ))}
           </div>
@@ -141,7 +141,7 @@ const Navbar = () => {
           >
             <div className="space-y-8">
               <div>
-                <span className="text-[10px] tracking-[0.4em] uppercase text-[#C9A96E] block mb-4">
+                <span className="text-[10px] tracking-[0.4em] uppercase text-[#bc0108] block mb-4">
                   Bureau
                 </span>
                 <p className="text-stone-500 font-light leading-relaxed">
@@ -151,7 +151,7 @@ const Navbar = () => {
                 </p>
               </div>
               <div>
-                <span className="text-[10px] tracking-[0.4em] uppercase text-[#C9A96E] block mb-4">
+                <span className="text-[10px] tracking-[0.4em] uppercase text-[#bc0108] block mb-4">
                   Contact
                 </span>
                 <p className="text-stone-500 font-light">
@@ -163,7 +163,7 @@ const Navbar = () => {
                 {["Instagram", "LinkedIn"].map((social) => (
                   <span
                     key={social}
-                    className="text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-[#C9A96E] cursor-pointer transition-colors"
+                    className="text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-[#bc0108] cursor-pointer transition-colors"
                   >
                     {social}
                   </span>
